@@ -1,0 +1,20 @@
+{
+  "name": "jenkin-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test",
+    "test:specific": "npx playwright test --grep environment-variables.spec.js",
+    "test:spec": "npx playwright test --grep playwrightIntro.spec.js",
+    "test:tags": "npx playwright test --grep @env-test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}
