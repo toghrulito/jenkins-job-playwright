@@ -5,8 +5,8 @@ test("Simple google test", async ({ page }) => {
     await page.goto("https://www.google.com/");
     await page.waitForTimeout(3000);
     // click button for acceping the cookes //button[@id='L2AGLb'].
-      await page.locator("#L2AGLb").click();
-    await page.waitForTimeout(3000);
+    //   await page.locator("#L2AGLb").click();
+    // await page.waitForTimeout(3000);
      
     let seachBoxEl = page.locator("//textarea[@class='gLFyf']");
     await  seachBoxEl.type("playwright");
